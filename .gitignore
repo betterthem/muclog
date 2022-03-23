@@ -1,5 +1,3 @@
-server.js
-
-.env
-
-.DS_Store
+/server.js
+/.env
+/.DS_Store
