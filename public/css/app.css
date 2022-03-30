@@ -13,6 +13,10 @@
     display: flex;
     border-bottom: 1px solid var(--border-line);
 }
+#footer {
+    border-top: 1px solid var(--border-line);
+    padding: 50px 0;
+}
 .header-wrap {
     display: flex;
     width: 100%;
@@ -64,6 +68,12 @@
     width: 100%;
     text-align: center;
 }
+.article {
+    margin-bottom: 100px;
+}
+.article .sub-menu{
+    margin-bottom: 100px;
+}
 .article .cate-title {
     display: flex;
     align-items: center;
@@ -75,10 +85,61 @@
 .article .cate-title .more {
     margin-left: auto;
     padding: 6px 12px;
-    color: var(--color-gray-black);
     border-radius: 10px;
     transition: background 0.2s;
 }
+.article .cate-title .more a {
+    color: var(--color-gray-black);
+}
 .article .cate-title .more:hover {
     background: var(--btn-hover);
+}
+.article .posts {
+    display: flex;
+}
+.article .posts .post-info {
+    margin-right: 100px;
+}
+.article .posts .post-info .tag {
+    margin-bottom: 10px;
+    color: var(--color-gray-black);
+}
+.article .posts .content p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.article .posts .content .title {
+    font-size: 24px;
+    color: var(--color-hight-black);
+    font-weight: 500;
+}
+.article .posts .content .content-view {
+    font-size: 16px;
+    color: var(--color-mid-black);
+}
+.article .posts .content .content-view a {
+    color: inherit;
+}
+.article .posts .content .date {
+    color: var(--color-gray-black);
+}
+.article .posts .thumbnail {
+    margin-left: auto;
+}
+.article .posts .thumbnail .test-img {
+    width: 270px;
+    height: 153px;
+    background: #D3D8DE;
+    border-radius: 10px;
+}
+
+.footer-wrap {
+    width: 100%;
+    text-align: center;
+}
+.ft-logo img {
+    width: 135px;
+    height: 35px;
+}
+.copyright p {
+    color: var(--color-gray-black);
 }
