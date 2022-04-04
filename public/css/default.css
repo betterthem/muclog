@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 html {font-size:10px;overflow-y:scroll}
-body, input, button, textarea, select {font-family:"Noto Sans KR", sans-serif;font-size:1.4rem}
+body, input, button, textarea, select {font-family:"Noto Sans KR", sans-serif;font-size:1.4rem;box-sizing: border-box}
 body {margin:0;padding:0;height:auto; background-color: #fff; color:#333D4B;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img, input, button, select {margin:0;padding:0}
 ul,li,ol,dl,dd,dt {list-style:none;padding:0;margin:0}

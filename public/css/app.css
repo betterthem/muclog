@@ -1,4 +1,5 @@
 :root {
+    --color-main: #4880FF;
     --color-hight-black: #333D4B;
     --color-mid-black: #4E5968;
     --color-gray-black: #8B95A1;
@@ -14,6 +15,7 @@
     border-bottom: 1px solid var(--border-line);
 }
 #footer {
+    margin-top: 100px;
     border-top: 1px solid var(--border-line);
     padding: 50px 0;
 }
@@ -23,7 +25,7 @@
 }
 .container {
     margin: auto;
-    max-width: 1140px;
+    max-width: 1050px;
     padding: 0 46px;
 }
 .left {
@@ -104,6 +106,9 @@
     margin-bottom: 10px;
     color: var(--color-gray-black);
 }
+.article .posts .content {
+    overflow: hidden;
+}
 .article .posts .content p:not(:last-child) {
     margin-bottom: 10px;
 }
@@ -111,10 +116,18 @@
     font-size: 24px;
     color: var(--color-hight-black);
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .article .posts .content .content-view {
     font-size: 16px;
     color: var(--color-mid-black);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .article .posts .content .content-view a {
     color: inherit;
@@ -142,4 +155,112 @@
 }
 .copyright p {
     color: var(--color-gray-black);
+}
+
+/*LOGIN*/
+
+.login .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.login .login-form .login-input {
+    margin-bottom: 20px;
+    border: 1px solid var(--border-line);
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+.login .login-form .login-btn {
+    margin-top: 20px;
+    height: 60px;
+    background: var(--color-main);
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+.login .login-form .login-btn:hover {
+    background: #4275EA;
+}
+.login .copyright {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*POST*/
+
+.article .sub-menu button {
+    padding: 8px 12px;
+    color: var(--color-gray-black);
+}
+.article .sub-menu .active {
+    font-weight: 500;
+    color: var(--color-hight-black);
+    border-bottom: 1px solid var(--color-hight-black);
+}
+
+/*VIEW*/
+
+.view .title,.info {
+    text-align: center;
+}
+.view .title {
+    margin-top: 100px;
+    font-size: 46px;
+    color: var(--color-hight-black);
+    font-weight: 500;
+}
+.view .info {
+    margin-top: 30px;
+    font-size: 18px;
+    color: var(--color-gray-black);
+}
+.view .info .author {
+    color: var(--color-mid-black);
+    font-weight: 400;
+}
+.view .content {
+    margin-top: 100px;
+    font-size: 18px;
+    color: var(--color-mid-black);
+}
+.view .tag {
+    margin-top: 100px;
+}
+.view .tag a {
+    padding: 8px 12px;
+    color: var(--color-gray-black);
+    background: #F5F9FD;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.view .reply {
+    margin-top: 40px;
+}
+.view .reply .count {
+    font-size: 18px;
+    color: var(--color-mid-black);
+}
+.view .reply form {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+}
+.view .reply .reply-box {
+    resize: none;
+    border: 1px solid var(--border-line);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+}
+.view .reply .reply-btn {
+    margin-top: 20px;
+    padding: 12px 16px;
+    background: var(--color-main);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
 }
